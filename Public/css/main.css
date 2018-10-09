@@ -1,0 +1,38 @@
+.search-div{
+    height:50px;
+}
+.search-div-form{
+    height:50px;
+}
+.search{
+    width: 90%;
+    margin:0 auto;
+    text-align: center;
+}
+.lib-list{
+    position: relative;
+    top:10px;
+}
+.next-back-page{
+    position: relative;
+    top:20px;
+}
+.next-back-page{
+    position: relative;
+    top:20px;
+    width:100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.next-back-page > a{
+    padding: 10px;
+}
+.info-body{
+    width:90%;
+    margin:0 auto;
+}
+.card-book{
+    text-align: center;
+    margin: 0 auto;
+    width:90%;
+}

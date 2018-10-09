@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>崛博Library</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="./Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Public/css/main.css">
+    <link rel="stylesheet" href="./Public/css/font-awesome.min.css">
+    <script src="./Public/js/jquery.min.js"></script>
+    <script src="./Public/js/popper.min.js"></script>
+    <script src="./Public/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+</head>
+
+<body>
+<div class="nav-header">
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <a class="navbar-brand" href="./index.php">崛博|Lib</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-light search-div">
+        <form class="form-inline search-div-form" method="get" action="./index.php">
+            <div class="input-group search">
+                <input type="hidden" name="c" value="search">
+                <input class="form-control" type="text" placeholder="请输入标题，例如：平凡的世界" name="key">
+                <button class="btn btn-warning" type="submit">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="card" style="width: 97%;margin:0 auto;">
+        <div class="card-body">
+            <div style="text-align: center;">
+                <img src="./Uploads/{$article_data.img}" width="200px" height="250px">
+                <h3 style="position: relative;top:10px;">{$article_data.title}</h3>
+            </div>
+            <div class="card-main">
+                <br>
+                <p><span class="badge badge-primary">简介</span>{$article_data.dec}</p>
+                <a href="{$article_data.url}"><button type="button" class="btn btn-success btn-block">下载该书</button></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

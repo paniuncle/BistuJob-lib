@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>崛博Library | 后台管理系统</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="./Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Public/css/main.css">
+    <link rel="stylesheet" href="./Public/css/font-awesome.min.css">
+    <script src="./Public/js/jquery.min.js"></script>
+    <script src="./Public/js/popper.min.js"></script>
+    <script src="./Public/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+</head>
+
+<body>
+<div class="nav-header">
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <a class="navbar-brand" href="./admin.php">崛博|Lib</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./admin.php">快捷导航</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./admin.php?c=manage">管理图书</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./admin.php?c=send">添加图书</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./admin.php?c=recommend">推荐图书</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <form style="width:30%;margin:0 auto;" method="post" action="./admin.php?c=index&a=dologin">
+                <label>帐号:</label>
+                <input type="text" class="form-control" name="username">
+                <label>密码:</label>
+                <input type="password" class="form-control" name="pwd">
+                <br>
+                <button type="submit" class="btn btn-primary">登录</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
