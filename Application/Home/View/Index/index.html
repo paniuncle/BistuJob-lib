@@ -73,7 +73,7 @@
                     <img style="float:left;" src="./Uploads/{$index_book_list.img}" class="rounded" width="80" height="100">
                     <div style="position: relative;left:10px;">
                         <h5>{$index_book_list.title}</h5>
-                        <p style="display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;"><span class="badge badge-primary">简介</span>{$index_book_list.dec}</p>
+                        <p style="display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;"><span class="badge badge-warning"><eq name="index_book_list.dec" value="0">科学技术类</eq><eq name="index_book_list.dec" value="1">文学类</eq><eq name="index_book_list.dec" value="2">成功/励志/口才/演讲类</eq></span><span class="badge badge-primary">简介</span>{$index_book_list.dec}</p>
                     </div>
                 </a>
             </volist>
